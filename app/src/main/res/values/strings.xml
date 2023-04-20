@@ -1,0 +1,9 @@
+<resources>
+    <string name="app_name">ToothNow</string>
+    <string name="label_BemVindo">Bem Vindo</string>
+    <string name="label_Login">Entrar com sua conta</string>
+    <string name="label_Email">Email</string>
+    <string name="label_Senha">Senha</string>
+    <string name="label_Entrar">Entrar</string>
+    <string name="label_RegistreSe">Registre-se</string>
+</resources>
