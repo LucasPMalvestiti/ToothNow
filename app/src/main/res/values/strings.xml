@@ -1,9 +1,21 @@
 <resources>
     <string name="app_name">ToothNow</string>
-    <string name="label_BemVindo">Bem Vindo</string>
-    <string name="label_Login">Entrar com sua conta</string>
-    <string name="label_Email">Email</string>
-    <string name="label_Senha">Senha</string>
-    <string name="label_Entrar">Entrar</string>
-    <string name="label_RegistreSe">Registre-se</string>
+    <string name="label_Login">Entrar</string>
+    <string name="label_Register">Registre-se</string>
+    <string name="lable_Email">Email</string>
+    <string name="label_Password">Senha</string>
+    <string name="label_Welcome">Bem Vindo</string>
+    <string name="label_WelcomeDescription">Entrar com sua conta</string>
+    <string name="label_RegisterTitle">Registro</string>
+    <string name="label_PersonalInfo">Informações Pessoais:</string>
+    <string name="label_NameRegister">Nome</string>
+    <string name="label_PhoneNumber">Telefone</string>
+    <string name="label_EmailRegister">Email</string>
+    <string name="label_PasswordRegister">Senha</string>
+    <string name="label_AdrTitle">Endereço de Atendimento</string>
+    <string name="label_Adr1">Endereço 1</string>
+    <string name="label_ShortResume">Breve Currículo</string>
+    <string name="label_ProfessionalExperience">Experiência Profissional</string>
+    <string name="label_RegisterBtn">Registrar</string>
+
 </resources>

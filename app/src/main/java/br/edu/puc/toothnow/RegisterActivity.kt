@@ -27,10 +27,10 @@ class RegisterActivity : AppCompatActivity() {
                 .penaltyDeath()
                 .build())
 
-        btnCadastrar = findViewById(R.id.btnCadastrar)
-        etNome = findViewById(R.id.etNome)
-        etTelefone = findViewById(R.id.etTelefone)
-        etEmail = findViewById(R.id.etEmail)
+        btnCadastrar = findViewById(R.id.btnSignIn)
+        etNome = findViewById(R.id.etName)
+        etTelefone = findViewById(R.id.etPhoneNumber)
+        etEmail = findViewById(R.id.etEmailRegister)
 
         btnCadastrar.setOnClickListener{
             adcDentista()
@@ -39,16 +39,16 @@ class RegisterActivity : AppCompatActivity() {
 
     private fun dadosProfissional(): HashMap<String, String> {
         return hashMapOf(
-            "nome" to "teste",
-            "telefone" to "1999999999",
-            "email" to "emailteste@gmail.com"
+            "nome" to etNome.text.toString(),
+            "telefone" to etTelefone.text.toString(),
+            "email" to etEmail.text.toString()
         )
     }
 
     private fun adcDentista(): Task<String> {
         return FirebaseFunctions
             .getInstance("southamerica-east1")
-            .getHttpsCallable("addSampleDentist")
+            .getHttpsCallable("addProf")
             .call(dadosProfissional())
             .continueWith { task ->
                 val result = task.result.data as String

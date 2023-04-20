@@ -9,7 +9,7 @@ import androidx.appcompat.widget.AppCompatButton
 class InitialActivity : AppCompatActivity() {
 
     lateinit var btnLogin: AppCompatButton
-    lateinit var btnRegistrar: AppCompatButton
+    lateinit var btnRegister: AppCompatButton
 
     @SuppressLint("MissingInflatedId")
     override fun onCreate(savedInstanceState: Bundle?) {
@@ -17,12 +17,12 @@ class InitialActivity : AppCompatActivity() {
         setContentView(R.layout.activity_initial)
 
         btnLogin = findViewById(R.id.btnLogin)
-        btnRegistrar = findViewById(R.id.btnRegistrar)
+        btnRegister = findViewById(R.id.btnRegister)
 
         btnLogin.setOnClickListener{
             openRegisterActivity()
         }
-        btnRegistrar.setOnClickListener{
+        btnRegister.setOnClickListener{
             openRegisterActivity()
         }
     }
