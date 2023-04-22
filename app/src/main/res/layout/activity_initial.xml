@@ -16,20 +16,7 @@
         app:layout_constraintTop_toTopOf="parent"
         app:layout_constraintBottom_toBottomOf="parent">
 
-        <!--BEM VINDO-->
-        <androidx.appcompat.widget.AppCompatTextView
-            android:id="@+id/tvWelcome"
-            android:layout_width="wrap_content"
-            android:layout_height="wrap_content"
-            android:textSize="40sp"
-            android:text="@string/label_Welcome"
 
-            android:textColor="@color/black"
-            android:fontFamily="sans-serif-medium"
-
-            app:layout_constraintEnd_toEndOf="parent"
-            app:layout_constraintStart_toStartOf="parent"
-            app:layout_constraintTop_toTopOf="parent"/>
 
         <!--ENTRAR COM SUA CONTA-->
         <androidx.appcompat.widget.AppCompatTextView
@@ -42,9 +29,10 @@
             android:textColor="@color/black"
             android:fontFamily="sans-serif-medium"
 
-            app:layout_constraintTop_toBottomOf="@+id/tvWelcome"
+            app:layout_constraintTop_toBottomOf="@+id/IVLogo"
             app:layout_constraintStart_toStartOf="parent"
-            app:layout_constraintEnd_toEndOf="parent" />
+            app:layout_constraintEnd_toEndOf="parent"
+            tools:ignore="NotSibling" />
 
         <!--LAYOUT MATERIAL DESING EMAIL-->
         <com.google.android.material.textfield.TextInputLayout
@@ -92,22 +80,36 @@
 
         <androidx.appcompat.widget.AppCompatButton
             android:id="@+id/btnLogin"
-            android:layout_width="150dp"
+            android:layout_width="300dp"
             android:layout_height="50dp"
             android:text="@string/label_Login"
 
-            app:layout_constraintStart_toStartOf="@id/tiPassword"
-            app:layout_constraintTop_toBottomOf="@+id/tiPassword" />
+
+            app:layout_constraintTop_toBottomOf="@+id/tiPassword"
+            tools:layout_editor_absoluteX="10dp"
+            tools:ignore="MissingConstraints" />
 
         <androidx.appcompat.widget.AppCompatButton
             android:id="@+id/btnRegister"
-            android:layout_width="150dp"
+            android:layout_width="300dp"
             android:layout_height="50dp"
             android:text="@string/label_Register"
 
-            app:layout_constraintEnd_toEndOf="@id/tiPassword"
-            app:layout_constraintTop_toBottomOf="@+id/tiPassword" />
+            app:layout_constraintTop_toBottomOf="@+id/btnLogin"
+            tools:layout_editor_absoluteX="10dp"
+            tools:ignore="MissingConstraints" />
+
 
     </androidx.constraintlayout.widget.ConstraintLayout>
+
+    <ImageView
+        android:id="@+id/IVLogo"
+        android:layout_width="238dp"
+        android:layout_height="149dp"
+        android:layout_margin="8dp"
+        android:src="@drawable/logo"
+        tools:layout_editor_absoluteX="86dp"
+        tools:layout_editor_absoluteY="84dp"
+        tools:ignore="MissingConstraints" />
 
 </androidx.constraintlayout.widget.ConstraintLayout>
