@@ -28,7 +28,7 @@ class InitialActivity : AppCompatActivity() {
     }
 
     private fun openCreateActivity() {
-        val intent = Intent(this, CreateActivity::class.java)
+        val intent = Intent(this, SingUpFragment::class.java)
         startActivity(intent)
     }
 

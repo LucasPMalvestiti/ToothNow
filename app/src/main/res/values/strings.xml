@@ -18,8 +18,8 @@
     <string name="label_ProfessionalExperience">Experiência Profissional</string>
     <string name="label_RegisterBtn">Registrar</string>
     <string name="label_ForgotBtn">Esqueci minha senha</string>
-    <string name="label_Cadastro">Cadastro</string>
-    <string name="label_Cadastrar">Cadastrar</string>
-    <string name="label_ConfirPass">Confirme a senha</string>
+    <string name="label_Singup">Cadastro</string>
+    <string name="label_Signup2">Cadastrar</string>
+
 
 </resources>
