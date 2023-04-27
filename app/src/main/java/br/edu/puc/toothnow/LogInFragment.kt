@@ -6,7 +6,7 @@ import androidx.appcompat.app.AppCompatActivity
 import android.os.Bundle
 import androidx.appcompat.widget.AppCompatButton
 
-class InitialActivity : AppCompatActivity() {
+class LogInFragment : AppCompatActivity() {
 
     lateinit var btnLogin: AppCompatButton
     lateinit var btnRegister: AppCompatButton
@@ -14,7 +14,7 @@ class InitialActivity : AppCompatActivity() {
     @SuppressLint("MissingInflatedId")
     override fun onCreate(savedInstanceState: Bundle?) {
         super.onCreate(savedInstanceState)
-        setContentView(R.layout.activity_initial)
+        setContentView(R.layout.fragment_login)
 
         btnLogin = findViewById(R.id.btnLogin)
         btnRegister = findViewById(R.id.btnRegister)
