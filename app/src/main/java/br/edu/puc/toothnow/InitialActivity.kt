@@ -23,11 +23,19 @@ class InitialActivity : AppCompatActivity() {
             openRegisterActivity()
         }
         btnRegister.setOnClickListener{
-            openRegisterActivity()
+            openCreateActivity()
         }
     }
+
+    private fun openCreateActivity() {
+        val intent = Intent(this, SingUpFragment::class.java)
+        startActivity(intent)
+    }
+
     private fun openRegisterActivity(){
         val intent = Intent(this, RegisterActivity::class.java)
         startActivity(intent)
     }
+
+
 }
