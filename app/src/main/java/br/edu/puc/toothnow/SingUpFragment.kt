@@ -46,7 +46,7 @@ class SingUpFragment : Fragment() {
         return binding.root
     }
 
-    /*override fun onViewCreated(view: View, savedInstanceState: Bundle?) {
+    override fun onViewCreated(view: View, savedInstanceState: Bundle?) {
         super.onViewCreated(view, savedInstanceState)
 
         binding.btnCadastrar.setOnClickListener {
@@ -56,10 +56,10 @@ class SingUpFragment : Fragment() {
                 binding.etemail.text.toString(),
                 binding.etTelefone.text.toString(),
                 binding.etSenha.text.toString(),
-                //(activity as MainActivity).getFcmToken
+                (activity as MainActivity).getFcmToken()
             );
         }
-    }*/
+    }
 
     fun JSONObject.toMap(): Map<String, *> = keys().asSequence().associateWith {
         when (val value = this[it])
@@ -80,7 +80,7 @@ class SingUpFragment : Fragment() {
         imm.hideSoftInputFromWindow(requireView().windowToken, 0)
     }
 
-    /*private fun signUpNewAccount(nome: String, telefone: String, email: String, password: String, fcmToken: String) {
+    private fun signUpNewAccount(nome: String, telefone: String, email: String, password: String, fcmToken: String) {
         auth = Firebase.auth
         // auth.useEmulator("127.0.0.1", 5001)
         // invocar a função e receber o retorno fazendo Cast para "CustomResponse"
@@ -112,9 +112,9 @@ class SingUpFragment : Fragment() {
                     // dar seguimento ao tratamento de erro.
                 }
             }
-    }*/
+    }
 
-    /*private fun updateUserProfile(nome: String, telefone: String, email: String, uid: String, fcmToken: String) : Task<CustomResponse> {
+    private fun updateUserProfile(nome: String, telefone: String, email: String, uid: String, fcmToken: String) : Task<CustomResponse> {
         // chamar a function para atualizar o perfil.
         functions = Firebase.functions("southamerica-east1")
 
@@ -136,7 +136,7 @@ class SingUpFragment : Fragment() {
                 result
             }
 
-    }*/
+    }
 
     override fun onDestroyView() {
         super.onDestroyView()
